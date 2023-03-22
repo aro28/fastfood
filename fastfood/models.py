@@ -56,7 +56,7 @@ class Order(models.Model):
     order_date_time = models.DateTimeField(null=True)
 
     def __str__(self):
-        return f'заказ клиента {self.client}, обслуживает {self.worker}, еда:{self.food}, ' \
+        return f'Клиент: {self.client}, обслуживает: {self.worker}, еда и ингредиенты:{self.food}, ' \
                f'время заказа:{self.order_date_time}'
 
 
